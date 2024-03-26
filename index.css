@@ -52,5 +52,12 @@
   margin-right: 20px;
 }
 .sidebar{
-  width: 0px;
+  width: 200px;
+  height: 500px;
+  position: relative;
+  z-index: 45;
+}
+.sidebar ul li{
+  margin: 3px 5px;
+  border: 2px solid black;
 }
