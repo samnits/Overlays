@@ -51,3 +51,6 @@
   align-items: center;
   margin-right: 20px;
 }
+.sidebar{
+  width: 0px;
+}
