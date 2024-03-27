@@ -52,12 +52,17 @@
   margin-right: 20px;
 }
 .sidebar{
-  width: 200px;
-  height: 500px;
+  opacity: 0;
+  width: 0;
+}
+.sidelist{
+  opacity: 100;
+  width: 300px;
   position: relative;
   z-index: 45;
+  transition: ease-in-out 0.3s;
 }
-.sidebar ul li{
+.sidelist ul li{
   margin: 3px 5px;
   border: 2px solid black;
 }
