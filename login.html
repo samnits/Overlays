@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <p class="p-enter">Please enter your e-mail and password:</p>
+    <form id="login-form">
+      <div class="input-group">
+        <input type="text" id="username" name="username" placeholder="Username">
+      </div>
+      <div class="input-group">
+        <input type="password" id="password" name="password" placeholder="Password">
+      </div>
+      <div id="error-message" class="error-message"></div>
+      <button type="submit">Login</button>
+      <p class="p-newuser">New customer? <u> Create an account</u></p>
+    </form>
+  </div>
+
+  <div class="overlay" id="overlay">
+    <div class="popup" id="popup">
+      <h2>Welcome!</h2>
+      <p>You are logged in successfully.</p>
+      <button id="close-popup">Close</button>
+    </div>
+  </div>
+  <script src="login.js"></script>
+</body>
+</html>
