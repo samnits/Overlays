@@ -15,8 +15,6 @@
     <marquee>
       <sale class="Top"> 15% off on purchase of 2999 </sale>
     </marquee>
-    <!-- <img src="images/Summer-Banner_mobile.webp" class="imgslide" id="img1" alt="remote-img">
-    <img src="images/Bundle_offer.Mobile_2.webp" id="img1" class="imgslide"alt="remote-img"> -->
   </div>
   <div class="main-navbar">
     <div class="navbar">
@@ -26,98 +24,380 @@
         <input type="text" placeholder="What are you looking for?" class="search-box" />
       </div>
       <div class="mid-nav">
-        <img src="images/icon1.avif" alt="remote-img">
+        <img src="images/icon1.avif" alt="remote-img" >
       </div>
       <div class="right-nav">
         <i class="fa-regular fa-envelope"></i>
-        <i class="fa-regular fa-user"></i>
+        <a href="login.html"><i class="fa-regular fa-user"></i></a>
         <i class="fa-solid fa-cart-shopping"></i>
       </div>
     </div>
-    <!-- <div class="sidebar demo">
-      <i class="fa-solid fa-xmark sidelist-cross"></i>
-      <ul class="list-main-side xls">
-        <li class="list-item-side ">Home</li>
-        <li class="list-item-side ">Shop All</li>
-        <li class="list-item-side ">Men </li>
-        <li class="list-item-side ">Women</li>
-        <li class="list-item-side ">Sale</li>
-        <li class="list-item-side ">Rich Cotton</li>
-        <li class="list-item-side ">Get in Touch!</li>
-      </ul>
-    </div> -->
-    <div class="top-image-section">
-      <img src="images/Summer-Banner_mobile.webp" class="imgslide" id="img1" alt="remote-img">
-      <img src="images/Bundle_offer.Mobile_2.webp" id="img1" class="imgslide" alt="remote-img">
-    </div>
-  </div>
 
- 
-  <div class="mid-section">
-    <h1>Hello Dear</h1>
+    <div id="popupContainer" class="popup-container">
+      <div class="popup-content">
+          <span id="closePopupBtn" class="close-btn">&times;</span>
+          <div style="margin-top: 30px; font-size: 22px; margin-bottom: 5px;">5% off on ALL PREPAID ORDERS</div>
+          <p style="font-size: 12px;">Shipping Within 48 Hours</p>
+          <form id="subscribeForm">
+              <!-- <label for="email">Email:</label> -->
+              <input type="email" id="email" name="email" required>
+              <button type="submit">SUBSCRIBE</button>
+          </form>
+      </div>
   </div>
-  <div class="circle-main-container">
-    <div class="main-container">
-      <img class='menuImg' src="images/slider/s1_front.webp" onmouseover="hover(this);" onmouseout="notHover(this);" />
-      <div class="img-text">Ultra Soft Relaxed Fit Phoenix T-shirt
-        Sale price <b>₹ 999.00</b></div>
+  <div class="navbar2">
+    <div class="dropdown">
+        <button class="dropbtn">Home</button>
+        <div class="line"></div>
     </div>
-    <div class="main-container">
-      <img class='menuImg' src="images/slider/s2_front.webp" onmouseover="hover1(this);"
-        onmouseout="notHover1(this);" />
-      <div class="img-text">Free Spirit Relaxed Fit T-shirt - Ultra Soft
-        Sale price <b>₹ 999.00</b></div>
-    </div>
-
-
-  </div>
-  <div class="purchase">
-    <img src="images/instagram/image.png" class="purchase_image">
-    </img>
-    <div class="purchase_side">
-      <div class="purchase_topic">
-        OVERLAYS CLOTHING
-      </div>
-      <div class="purchase_cloth">
-        Fire Oversized Hoodie - Orange
-      </div>
-      <div class="purchase_mrp">₹ 26 M.R.P
-      </div>
-      <div class="purchase_size">
-        <div>Size: M</div>
-        <div class="purchase_size_chart"><u>Size chart</u></div>
+    <div class="dropdown">
+        <button class="dropbtn">Men</button>
+        <div class="line"></div>
+        <div class="dropdown-content">
+            <a href="#just-launched">T-Shirts</a>
+            <a href="#circle-main-container">Oversized T-Shirts</a>
+            <a href="#joggers-mc">Joggers</a>
        
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn"> <a href="heavy-weight.html" style="text-decoration: none; color: black;">Heavy Weight</a></button>
+        <div class="line"></div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn" style="color: red !important;">OV FREE TECH (ultra soft cotton)</button>
+        <div class="line"></div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn"> <a href="joggers.html" style="text-decoration: none; color: black;">Sale</a></button>
+        <div class="line"></div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Women</button>
+        <div class="line"></div>
+        <div class="dropdown-content">
+            <a href="woman.html">Empower Her</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Contact US</button>
+        <div class="line"></div>
+        <div class="dropdown-content">
+            <a href="faq.html">FAQ</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="index.html">Contact Us</a>
+        </div>
+    </div>
+</div>
+    <div class="img-experience" style="width: 100vw; margin-bottom: 20px;">
+      <img src="images/index/experience.png" alt="" width="100%">
+    </div>
+    <div class="summer-blues" style="width: 100vw; margin-bottom: 20px;">
+      <img src="images/index/summer-blues.png" alt="" width="100%">
+    </div>
+
+
+    <div class="just-launched-heading" style="font-size: 45px; font-weight: 600; text-align: center; margin-top: 30px;">
+      JUST LAUNCHED! &nbsp;🚀 </div>
+    <div class="just-launched-subHeading"
+      style="font-size: 20px; text-align: center; margin-top: 20px; margin-bottom: 30px;">Summer Blues : Ultra Soft
+      T-shirts</div>
+    <div class="just-launched-mc" id="just-launched">
+      <div class="just-launched-data" style="margin-left: 30px;">
+        <img class='just-img' src="images/index-justLaunched/jl1_front.png"
+          onmouseover="this.src='images/index-justLaunched/jl1_back.png'"
+          onmouseout="this.src='images/index-justLaunched/jl1_front.png'" />
       </div>
-      <div class="purchase_size_available">
-        <div class="pursize1">XS</div>
-        <div class="pursize2">S</div>
-        <div class="pursize3">M</div>
-        <div class="pursize4">L</div>
-        <div class="pursize5">XL</div>
+      <div class="just-launched-data">
+        <img class='just-img' src="images/index-justLaunched/jl2_front.png"
+          onmouseover="this.src='images/index-justLaunched/jl2_back.png'"
+          onmouseout="this.src='images/index-justLaunched/jl2_front.png'" />
       </div>
-      <div class="purchase_quantity">
-        <div class="quna1">Quantity :</div>
-        <div class="quan_number">
-          <div class="quan_negative"><i class="fa-solid fa-minus"></i></div>
-          <div class="quan_amount">1</div>
-          <div class="quan_positive"><i class="fa-solid fa-plus"></i></div>
+      <div class="just-launched-data">
+        <img class='just-img' src="images/index-justLaunched/jl3_front.png"
+          onmouseover="this.src='images/index-justLaunched/jl3_back.png'"
+          onmouseout="this.src='images/index-justLaunched/jl3_front.png'" />
+      </div>
+      <div class="just-launched-data">
+        <img class='just-img' src="images/index-justLaunched/jl4_front.png"
+          onmouseover="this.src='images/index-justLaunched/jl4_back.png'"
+          onmouseout="this.src='images/index-justLaunched/jl4_front.png'" />
+      </div>
+      <div class="just-launched-data">
+        <img class='just-img' src="images/index-justLaunched/jl5_front.png"
+          onmouseover="this.src='images/index-justLaunched/jl5_back.png'"
+          onmouseout="this.src='images/index-justLaunched/jl5_front.png'" />
+      </div>
+      <div class="just-launched-data">
+        <img class='just-img' src="images/index-justLaunched/jl6_front.png"
+          onmouseover="this.src='images/index-justLaunched/jl1_back.png'"
+          onmouseout="this.src='images/index-justLaunched/jl6_front.png'" />
+      </div>
+      <div class="just-launched-data">
+        <img class='just-img' src="images/index-justLaunched/jl7_front.png"
+          onmouseover="this.src='images/index-justLaunched/jl7_back.png'"
+          onmouseout="this.src='images/index-justLaunched/jl7_front.png'" />
+      </div>
+      <div class="just-launched-data">
+        <img class='just-img' src="images/index-justLaunched/jl8_front.png"
+          onmouseover="this.src='images/index-justLaunched/jl8_back.png'"
+          onmouseout="this.src='images/index-justLaunched/jl8_front.png'" />
+      </div>
+    </div>
+
+
+    <div class="top-image-section">
+      <img src="images/index/embrace.png" class="imgslide" id="img1" alt="remote-img" width="100%">
+      <img src="images/index/textured.png" id="img1" class="imgslide" alt="remote-img" width="100%">
+    </div>
+   
+    
+    <div class="heavy-heading" style="margin: 20px; font-weight: 600; font-size: 36px; text-align: center;">Heavy Weight Textured T- shirts</div>
+    <div class="heavy-mc">
+      <div class="heavy-data" style="margin-left: 30px;">
+        <img class='heavy-img' src="images/index-heavy/hv1_front.png"
+          onmouseover="this.src='images/index-heavy/hv1_back.png'"
+          onmouseout="this.src='images/index-heavy/hv1_front.png'" />
+      </div>
+      <div class="heavy-data" ">
+        <img class='heavy-img' src="images/index-heavy/hv2_front.png"
+          onmouseover="this.src='images/index-heavy/hv2_back.png'"
+          onmouseout="this.src='images/index-heavy/hv2_front.png'" />
+      </div>
+      <div class="heavy-data" ">
+        <img class='heavy-img' src="images/index-heavy/hv3_front.png"
+          onmouseover="this.src='images/index-heavy/hv3_back.png'"
+          onmouseout="this.src='images/index-heavy/hv3_front.png'" />
+      </div>
+      <div class="heavy-data" ">
+        <img class='heavy-img' src="images/index-heavy/hv4_front.png"
+          onmouseover="this.src='images/index-heavy/hv4_back.png'"
+          onmouseout="this.src='images/index-heavy/hv4_front.png'" />
+      </div>
+      <div class="heavy-data" ">
+        <img class='heavy-img' src="images/index-heavy/hv5_front.png"
+          onmouseover="this.src='images/index-heavy/hv5_back.png'"
+          onmouseout="this.src='images/index-heavy/hv5_front.png'" />
+      </div>
+      <div class="heavy-data" ">
+        <img class='heavy-img' src="images/index-heavy/hv6_front.png"
+          onmouseover="this.src='images/index-heavy/hv6_back.png'"
+          onmouseout="this.src='images/index-heavy/hv6_front.png'" />
+      </div>
+      <div class="heavy-data" ">
+        <img class='heavy-img' src="images/index-heavy/hv7_front.png"
+          onmouseover="this.src='images/index-heavy/hv7_back.png'"
+          onmouseout="this.src='images/index-heavy/hv7_front.png'" />
+      </div>
+      <div class="heavy-data" ">
+        <img class='heavy-img' src="images/index-heavy/hv8_front.png"
+          onmouseover="this.src='images/index-heavy/hv8_back.png'"
+          onmouseout="this.src='images/index-heavy/hv8_front.png'" />
+      </div>
+      <div class="heavy-data" ">
+        <img class='heavy-img' src="images/index-heavy/hv9_front.png"
+          onmouseover="this.src='images/index-heavy/hv9_back.png'"
+          onmouseout="this.src='images/index-heavy/hv9_front.png'" />
+      </div>
+      <div class="heavy-data" ">
+        <img class='heavy-img' src="images/index-heavy/hv10_front.png"
+          onmouseover="this.src='images/index-heavy/hv10_back.png'"
+          onmouseout="this.src='images/index-heavy/hv10_front.png'" />
+      </div>
+      <div class="heavy-data" ">
+        <img class='heavy-img' src="images/index-heavy/hv11_front.png"
+          onmouseover="this.src='images/index-heavy/hv11_back.png'"
+          onmouseout="this.src='images/index-heavy/hv11_front.png'" />
+      </div>
+      
+      
+    </div>
+
+
+    <div class="top-image-section">
+      <img src="images/index/print.png" class="hv_imgslide" id="hv_img1" alt="remote-img" width="100%">
+      <img src="images/index/fabric.png" id="hv_img1" class="hv_imgslide" alt="remote-img" width="100%">
+    </div>
+
+
+    <div class="jogggers-headng" style="font-weight: 600; font-size: 42px; text-align: center; margin: 25px;">JOGGERS FOR YOU</div>
+    <div class="joggers-mc" id="joggers-mc">
+      <div class="joggers-data" style="margin-left: 30px;">
+        <img class='joggers-img' src="images/index-joggers/jog1_front.png"
+          onmouseover="this.src='images/index-joggers/jog1_back.png'"
+          onmouseout="this.src='images/index-joggers/jog1_front.png'" />
+      </div>
+      <div class="joggers-data" >
+        <img class='joggers-img' src="images/index-joggers/jog2_front.png"
+          onmouseover="this.src='images/index-joggers/jog2_back.png'"
+          onmouseout="this.src='images/index-joggers/jog2_front.png'" />
+      </div>
+      <div class="joggers-data" >
+        <img class='joggers-img' src="images/index-joggers/jog3_front.png"
+          onmouseover="this.src='images/index-joggers/jog3_back.png'"
+          onmouseout="this.src='images/index-joggers/jog3_front.png'" />
+      </div>
+      <div class="joggers-data" >
+        <img class='joggers-img' src="images/index-joggers/jog4_front.png"
+          onmouseover="this.src='images/index-joggers/jog4_back.png'"
+          onmouseout="this.src='images/index-joggers/jog4_front.png'" />
+      </div>
+      <div class="joggers-data" >
+        <img class='joggers-img' src="images/index-joggers/jog5_front.png"
+          onmouseover="this.src='images/index-joggers/jog5_back.png'"
+          onmouseout="this.src='images/index-joggers/jog5_front.png'" />
+      </div>
+      <div class="joggers-data" >
+        <img class='joggers-img' src="images/index-joggers/jog6_front.png"
+          onmouseover="this.src='images/index-joggers/jog6_back.png'"
+          onmouseout="this.src='images/index-joggers/jog6_front.png'" />
+      </div>
+    </div>
+
+
+    <div class="circle-main-container-heading"
+      style="font-size: 40px; margin: 40px; font-weight: 600; text-align: center;">
+      DISCOVER BESTSELLERS
+    </div>
+    <div id="circle-main-container" class="circle-main-container">
+      <div class="main-container" style="margin-left: 30px;">
+        <img class='menuImg' src="images/slider/s1_front.webp" onmouseover="this.src='images/slider/s1_back.webp'"
+          onmouseout="this.src='images/slider/s1_front.webp'" />
+
+      </div>
+      <div class="main-container">
+        <img class='menuImg' src="images/slider/s2_front.webp" onmouseover="this.src='images/slider/s2_back.webp'"
+          onmouseout="this.src='images/slider/s2_front.webp'" />
+      </div>
+      <div class="main-container">
+        <img class='menuImg' src="images/slider/s3_front.png" onmouseover="this.src='images/slider/s3_back.png'"
+          onmouseout="this.src='images/slider/s3_front.png'" />
+      </div>
+      <div class="main-container">
+        <img class='menuImg' src="images/slider/s4_front.png" onmouseover="this.src='images/slider/s4_back.png'"
+          onmouseout="this.src='images/slider/s4_front.png'" />
+      </div>
+
+
+    </div>
+    <div class="purchase">
+      <img src="images/instagram/image.png" class="purchase_image">
+      </img>
+      <div class="purchase_side">
+        <div class="purchase_topic">
+          OVERLAYS CLOTHING
+        </div>
+        <div class="purchase_cloth">
+          Fire Oversized Hoodie - Orange
+        </div>
+        <div class="purchase_mrp">₹ 2600 M.R.P
+        </div>
+        <div class="purchase_size">
+          <div>Size: M</div>
+          <div class="purchase_size_chart"><u>Size chart</u></div>
+
+        </div>
+        <div class="purchase_size_available">
+          <div class="pursize-main">XS</div>
+          <div class="pursize-main">S</div>
+          <div class="pursize-main">M</div>
+          <div class="pursize-main">L</div>
+          <div class="pursize-main">XL</div>
+        </div>
+        <div class="purchase_quantity">
+          <div class="quna1">Quantity :</div>
+          <div class="quan_number">
+            <div class="quan_negative"><i class="fa-solid fa-minus"></i></div>
+            <div class="quan_amount">1</div>
+            <div class="quan_positive"><i class="fa-solid fa-plus"></i></div>
+          </div>
+        </div>
+        <div class="addCart">Add To Cart</div>
+        <div class="buybtn">PROCEED TO BUY</div>
+      </div>
+    </div>
+    <div class="instagram-section">
+      <div class="inst1"></div>
+      <div class="inst2"></div>
+      <div class="inst3"></div>
+      <div class="inst4"></div>
+      <div class="inst5"></div>
+      <div class="inst6"></div>
+      <div class="inst6"></div>
+    </div>
+
+
+
+    <div class="footer">
+      <div class="items">
+        <div id="About-Us">
+          <ul>
+            <h4 style="margin-top: 0.5rem; margin-bottom: 0.5rem">
+              <pre><h3> About Us</h3></pre></h4>
+            <li>Overlays Clothing Pvt Ltd</li>
+            <li>Explore to CHANGE.</li>
+            <li><a href="#">Learn More</a></li>
+          </ul>
+        </div>
+        <div id="Policies">
+          <ul>
+            <h4 style="margin-top: 0.5rem; margin-bottom: 0.5rem">
+              <pre><h3> Policies</h3></pre></h4>
+            <li>Return Your Order</li>
+            <li>Shipping Policy</li>
+            <li>Return, Refund, and Cancellation</li>
+            <li>Terms and Conditions</li>
+            <li>Privacy Policy</li>
+            <li>Fraud Protection</li>
+          </ul>
+        </div>
+        <div id="Newsletter">
+          <ul>
+            <h4 style="margin-top: 0.5rem; margin-bottom: 0.5rem">
+              <pre><h3> Newsletter</h3></pre>
+            </h4>
+            <li>
+              You can be the first one to know about our new releases, latest
+              offers and more.><a href="#">Sign up now!</a>
+            </li>
+            <li><div class="email-box">
+              <input class="email" type="email" placeholder="Your-Email" style="border: none; outline: none; width: 100%;">
+              <i class="fa-solid fa-arrow-right"></i>
+              <button type="submit" class="submit-email" >
+                
+          </div></li>
+            
+          </ul>
+        </div>
+        <div id="Follow-Us">
+          <ul>
+            <h4 style="margin-top: 0.5rem; margin-bottom: 0.5rem">
+            <pre><h3> Follow-Us</h3></pre></h4>
+            <li>Stay in touch</li>
+            <li>
+            <div class="follow">
+            <div class="fb"><i class="fa-brands fa-facebook"></i></div>
+            <div class="twitter"><i class="fa-brands fa-twitter"></i></div>
+            <div class="ig"><i class="fa-brands fa-instagram"></i></div>
+            <div class="yt"><i class="fa-brands fa-youtube"></i></div>
+            </div>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="addCart">Add To Cart</div>
-      <div class="buybtn">PROCEED TO BUY</div>
     </div>
-  </div>
-  <div class="instagram-section">
-    <div class="inst1"></div>
-    <div class="inst2"></div>
-    <div class="inst3"></div>
-    <div class="inst4"></div>
-    <div class="inst5"></div>
-    <div class="inst6"></div>
-    <div class="inst6"></div>
-  </div>
+    <div class="end" style="margin-left: 3rem; " >
+      <ul type="square">
+        <li>
+          Overlays Clothing
+          <a href="#" style="cursor: pointer;"
+            >Powered by Shopify</a
+          >
+        </li>
+      </ul>
+    </div>
 
-  <script src="index.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>

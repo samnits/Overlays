@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heavy Weight</title>
+    <link rel="stylesheet" href="heavy-weight.css">
+    <script src="https://kit.fontawesome.com/4f0fa90804.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <div class="main-navbar">
+    <div class="navbar">
+      <div class="left-nav">
+        <i class="fa-solid fa-bars nav3layer"></i>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="What are you looking for?" class="search-box" />
+      </div>
+      <div class="mid-nav">
+        <img src="images/icon1.avif" alt="remote-img" >
+      </div>
+      <div class="right-nav">
+        <i class="fa-regular fa-envelope"></i>
+        <a href="login.html"><i class="fa-regular fa-user"></i></a>
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
+    </div>
+
+    <div id="popupContainer" class="popup-container">
+      <div class="popup-content">
+          <span id="closePopupBtn" class="close-btn">&times;</span>
+          <div style="margin-top: 30px; font-size: 22px; margin-bottom: 5px;">5% off on ALL PREPAID ORDERS</div>
+          <p style="font-size: 12px;">Shipping Within 48 Hours</p>
+          <form id="subscribeForm">
+              <!-- <label for="email">Email:</label> -->
+              <input type="email" id="email" name="email" required>
+              <button type="submit">SUBSCRIBE</button>
+          </form>
+      </div>
+  </div>
+  <div class="navbar2">
+    <div class="dropdown">
+        <button class="dropbtn"><a href="index.html" style="text-decoration: none; color: black;">Home</a></button>
+        <div class="line"></div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Men</button>
+        <div class="line"></div>
+        <div class="dropdown-content">
+            <a href="index.html#just-launched">T-Shirts</a>
+            <a href="index.html#circle-main-container">Oversized T-Shirts</a>
+            <a href="index.html#joggers-mc">Joggers</a>
+       
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn"> <a href="heavy-weight.html" style="text-decoration: none; color: black;">Heavy Weight</a></button>
+        <div class="line"></div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn" style="color: red !important;"><a href="OV-free.html" style="text-decoration: none; color: red;">OV FREE Tech (ultra soft cotton)</a></button>
+        <div class="line"></div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn"> <a href="joggers.html" style="text-decoration: none; color: black;">Sale</a></button>
+        <div class="line"></div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Women</button>
+        <div class="line"></div>
+        <div class="dropdown-content">
+            <a href="woman.html">Empower Her</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Contact US</button>
+        <div class="line"></div>
+        <div class="dropdown-content">
+            <a href="faq.html">FAQ</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="index.html">Contact Us</a>
+        </div>
+    </div>
+</div>
+    <div class="container">
+        <div class="filters">
+          <div class="filter-section">
+            <div class="filter-title" style="padding-bottom: 20px;">
+                Filters
+            </div>
+         </div>
+            <div class="filter-section">
+                <div class="filter-title" onclick="toggleFilter('price')">
+                    Price <span id="price-arrow" class="arrow"><i class="fa-solid fa-angle-down"></i></span>
+                </div>
+                <div id="price" class="filter-content">
+                    <div class="range-inputs">
+                        <input type="range" id="min-price" min="0" max="699" value="0" oninput="updatePriceInputs()">
+                        <input type="range" id="max-price" min="0" max="4999" value="2000" oninput="updatePriceInputs()">
+                    </div>
+                    <div class="price-inputs">
+                        <label>Min Price: ₹<input type="number" id="min-price-input" value="0" min="0" max="1000" onchange="updatePriceRanges()"></label>
+                        <label>Max Price: ₹<input type="number" id="max-price-input" value="1000" min="0" max="1000" onchange="updatePriceRanges()"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-section">
+                <div class="filter-title" onclick="toggleFilter('product-type')">
+                    Product Type <span id="product-type-arrow" class="arrow"><i class="fa-solid fa-angle-down"></i></span>
+                </div>
+                <div id="product-type" class="filter-content">
+                    <label><input type="checkbox"> Apparel & Accessories</label><br>
+                    <label><input type="checkbox" class="checkbox-product"> Crop Top</label><br>
+                    <label><input type="checkbox" class="checkbox-product"> Hoodies</label><br>
+                    <label><input type="checkbox" class="checkbox-product">Jackets</label><br>
+                    <label><input type="checkbox" class="checkbox-product"> Pants</label><br>
+                    <label><input type="checkbox" class="checkbox-product"> Joggers</label><br>
+                    <label><input type="checkbox" class="checkbox-product"> Shirts</label><br>
+                    <label><input type="checkbox" class="checkbox-product"> Sweatshirts</label><br>
+                    <label><input type="checkbox" class="checkbox-product"> T - Shirts</label>
+                </div>
+            </div>
+            <div class="filter-section">
+                <div class="filter-title" onclick="toggleFilter('size')">
+                    Size <span id="size-arrow" class="arrow"><i class="fa-solid fa-angle-down"></i></span>
+                </div>
+                <div id="size" class="filter-content">
+                    <label class="size-option">XS
+                    </label>
+                    <label class="size-option">S</label>
+                    <label class="size-option">M</label>
+                    <label class="size-option">L</label>
+                    <label class="size-option">XL</label>
+                    <label class="size-option">XXL</label>
+                    <label class="size-option">26</label>
+                    <label class="size-option">28</label>
+                    <label class="size-option">30</label>
+                    <label class="size-option">32</label>
+                    <label class="size-option">34</label>
+                    <label class="size-option">36</label>
+                    <label class="size-option">38</label>
+                    <label class="size-option">40</label>
+                </div>
+            </div>
+        </div>
+        <div class="products">
+            <div class="heavy-heading" style="margin: 20px; font-weight: 600; font-size: 36px; text-align: center;">Heavy Weight Textured T- shirts</div>
+            <div class="heavy-mc">
+              <div class="heavy-data" style="margin-left: 30px;">
+                <img class='heavy-img' src="images/index-heavy/hv1_front.png"
+                  onmouseover="this.src='images/index-heavy/hv1_back.png'"
+                  onmouseout="this.src='images/index-heavy/hv1_front.png'" />
+              </div>
+              <div class="heavy-data" ">
+                <img class='heavy-img' src="images/index-heavy/hv2_front.png"
+                  onmouseover="this.src='images/index-heavy/hv2_back.png'"
+                  onmouseout="this.src='images/index-heavy/hv2_front.png'" />
+              </div>
+              <div class="heavy-data" ">
+                <img class='heavy-img' src="images/index-heavy/hv3_front.png"
+                  onmouseover="this.src='images/index-heavy/hv3_back.png'"
+                  onmouseout="this.src='images/index-heavy/hv3_front.png'" />
+              </div>
+              <div class="heavy-data" ">
+                <img class='heavy-img' src="images/index-heavy/hv4_front.png"
+                  onmouseover="this.src='images/index-heavy/hv4_back.png'"
+                  onmouseout="this.src='images/index-heavy/hv4_front.png'" />
+              </div>
+              <div class="heavy-data" ">
+                <img class='heavy-img' src="images/index-heavy/hv5_front.png"
+                  onmouseover="this.src='images/index-heavy/hv5_back.png'"
+                  onmouseout="this.src='images/index-heavy/hv5_front.png'" />
+              </div>
+              <div class="heavy-data" ">
+                <img class='heavy-img' src="images/index-heavy/hv6_front.png"
+                  onmouseover="this.src='images/index-heavy/hv6_back.png'"
+                  onmouseout="this.src='images/index-heavy/hv6_front.png'" />
+              </div>
+              <div class="heavy-data" ">
+                <img class='heavy-img' src="images/index-heavy/hv7_front.png"
+                  onmouseover="this.src='images/index-heavy/hv7_back.png'"
+                  onmouseout="this.src='images/index-heavy/hv7_front.png'" />
+              </div>
+              <div class="heavy-data" ">
+                <img class='heavy-img' src="images/index-heavy/hv8_front.png"
+                  onmouseover="this.src='images/index-heavy/hv8_back.png'"
+                  onmouseout="this.src='images/index-heavy/hv8_front.png'" />
+              </div>
+              <div class="heavy-data" ">
+                <img class='heavy-img' src="images/index-heavy/hv9_front.png"
+                  onmouseover="this.src='images/index-heavy/hv9_back.png'"
+                  onmouseout="this.src='images/index-heavy/hv9_front.png'" />
+              </div>
+              <div class="heavy-data" ">
+                <img class='heavy-img' src="images/index-heavy/hv10_front.png"
+                  onmouseover="this.src='images/index-heavy/hv10_back.png'"
+                  onmouseout="this.src='images/index-heavy/hv10_front.png'" />
+              </div>
+              <div class="heavy-data" ">
+                <img class='heavy-img' src="images/index-heavy/hv11_front.png"
+                  onmouseover="this.src='images/index-heavy/hv11_back.png'"
+                  onmouseout="this.src='images/index-heavy/hv11_front.png'" />
+              </div>
+              
+              
+            </div>
+        </div>
+      </div> 
+      
+
+      <div class="policies">
+        <div class="sub-policies">
+          <img src="images/login/car.png" alt="">
+          <div class="policy-info">FREE & FAST DELIVERY</div>
+          <div class="policy-smallinfo">Shipping within 48 hours across India.</div>
+        </div>
+        <div class="sub-policies">
+          <img src="images/login/replace.png" alt="">
+          <div class="policy-info">RETURN POLICY</div>
+          <div class="policy-smallinfo">Returns with 7 days.</div>
+        </div>
+        <div class="sub-policies">
+          <img src="images/login/message.png" alt="">
+          <div class="policy-info">CONTACT US</div>
+          <div class="policy-smallinfo">Write us at support@overlaysclothing.com</div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="items">
+          <div id="About-Us">
+            <ul>
+              <h4 style="margin-top: 0.5rem; margin-bottom: 0.5rem">
+                <pre><h3> About Us</h3></pre></h4>
+              <li>Overlays Clothing Pvt Ltd</li>
+              <li>Explore to CHANGE.</li>
+              <li><a href="#">Learn More</a></li>
+            </ul>
+          </div>
+          <div id="Policies">
+            <ul>
+              <h4 style="margin-top: 0.5rem; margin-bottom: 0.5rem">
+                <pre><h3> Policies</h3></pre></h4>
+              <li>Return Your Order</li>
+              <li>Shipping Policy</li>
+              <li>Return, Refund, and Cancellation</li>
+              <li>Terms and Conditions</li>
+              <li>Privacy Policy</li>
+              <li>Fraud Protection</li>
+            </ul>
+          </div>
+          <div id="Newsletter">
+            <ul>
+              <h4 style="margin-top: 0.5rem; margin-bottom: 0.5rem">
+                <pre><h3> Newsletter</h3></pre>
+              </h4>
+              <li>
+                You can be the first one to know about our new releases, latest
+                offers and more.><a href="#">Sign up now!</a>
+              </li>
+              <li><div class="email-box">
+                <input class="email" type="email" placeholder="Your-Email" style="border: none; outline: none; width: 100%;">
+                <i class="fa-solid fa-arrow-right"></i>
+                <button type="submit" class="submit-email" >
+                  
+            </div></li>
+              
+            </ul>
+          </div>
+          <div id="Follow-Us">
+            <ul>
+              <h4 style="margin-top: 0.5rem; margin-bottom: 0.5rem">
+              <pre><h3> Follow-Us</h3></pre></h4>
+              <li>Stay in touch</li>
+              <li>
+              <div class="follow">
+              <div class="fb"><i class="fa-brands fa-facebook"></i></div>
+              <div class="twitter"><i class="fa-brands fa-twitter"></i></div>
+              <div class="ig"><i class="fa-brands fa-instagram"></i></div>
+              <div class="yt"><i class="fa-brands fa-youtube"></i></div>
+              </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="end" style="margin-left: 3rem; " >
+        <ul type="square">
+          <li>
+            Overlays Clothing
+            <a href="#" style="cursor: pointer;"
+              >Powered by Shopify</a
+            >
+          </li>
+        </ul>
+      </div>
+  
+      <script src="heavy-weight.js"></script>
+</body>
+</html>
